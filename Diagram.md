@@ -92,8 +92,8 @@ This is the Flowgorithm option but done in Python.
   
 The script first prints the starting text.  
   
-    After asking for a minimum value, it checks if the input is an integer. If it is not, it then checks if it has a -, and if it does it prints an error saying that negative numbers aren't supported. Then it checks if the input is only numbers or -, and if it isn't it prints that only numbers can be entered. It then loops back to asking for a minimum value. If the input is an integer, it then moves on to the maximum value. The maximum value is validated in the same way.  
+After asking for a minimum value, it checks if the input is an integer. If it is not, it then checks if it has a -, and if it does it prints an error saying that negative numbers aren't supported. Then it checks if the input is only numbers or -, and if it isn't it prints that only numbers can be entered. It then loops back to asking for a minimum value. If the input is an integer, it then moves on to the maximum value. The maximum value is validated in the same way.  
   
-    The script then checks if the maximum value is higher than the minimum value. If it isn't, the script prints as such and loops backs to asking for a minimum value. If it is, it then generates the number to be guessed and asks for a guess.
+The script then checks if the maximum value is higher than the minimum value. If it isn't, the script prints as such and loops backs to asking for a minimum value. If it is, it then generates the number to be guessed and asks for a guess.
 
-    The guess is checked in the same way that the maximum/minimum values are, printing errors in the same way and looping back to asking for another input. If the guess is higher or lower, it prints that and goes back to asking for another guess. If the guess is the number, the win text prints and the script exits.
+The guess is checked in the same way that the maximum/minimum values are, printing errors in the same way and looping back to asking for another input. If the guess is higher or lower, it prints that and goes back to asking for another guess. If the guess is the number, the win text prints and the script exits.
