@@ -88,7 +88,7 @@ flowchart TB
 ```
 
 ### Documentation
-This is the Flowgorithm option but done in Python.  
+This is the Flowgorithm option but done in Python. The file is called "guessinggame.py" located in this repo.  
   
 The script first prints the starting text.  
   
