@@ -5,7 +5,7 @@ function fetchGradeData() {
     // Create a new request for HTTP data
     let xhr = new XMLHttpRequest();
     // This is the address on the machine we're asking for data
-    let apiRoute = "/api/grades/";
+    let apiRoute = "/api/grades";
     //When the request changes status, we run this anonymous function
     xhr.onreadystatechange = function(){
         let results;
@@ -15,7 +15,7 @@ function fetchGradeData() {
             if(xhr.status !== 200){
                 console.error('Could not get grades. Status: ${xhr.status}');
             }
-            // and then we call the function to update the html with our data
+            // and then we call the function to update the html with our datas
             populateGradebook(JSON.parse(xhr.responseText));
             }
     }.bind(this);
@@ -30,11 +30,12 @@ function populateGradebook(data) {
     let tableElm = document.getElementById("gradebook");
         data.forEach(function(assignment){
             let row = document.createElement("tr");
-            let colums = [];
+            let columns = [];
             columns.name = document.createElement('td');
             columns.name.appendChild(
                 document.createTextNode(assignment.last_name + ", " + assignment.first_name)
             );
+            columns.grade = document.createElement('td');
             columns.grade.appendChild(
                 document.createTextNode(assignment.total_grade)
             );
@@ -47,5 +48,4 @@ function populateGradebook(data) {
 // TODO: REMOVE THIS
 // Call the stubs to demonstrate the workflow
 const gradeData = fetchGradeData();
-populateGradebook(gradeData);
-// END REMOVE
+
